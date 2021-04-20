@@ -1,0 +1,25 @@
+{% load static %}
+  <head>
+    <link rel="stylesheet"  href="{%  static 'css/style.css' %}">
+    <title>Linguist</title>
+  </head>
+{% if gyms %}
+    <div class="X">
+        <ul class="SG">
+            {% for gym in gyms %}
+                  <li class="sgLi">
+                    <div class="box">
+                        <ul class="s1">
+                            <li>address: {{ gym.address }}</li>
+                            <li>description: {{gym.description}}</li>
+                            <li>name: {{gym.name}}</li>
+                            <li>phone: {{ gym.phone }}</li>
+                        </ul>
+                    </div>
+                  </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
