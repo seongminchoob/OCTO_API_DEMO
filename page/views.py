@@ -13,9 +13,8 @@ def index(request):
     if r.status_code == 401:
         access_token = fetch_access_token(request)
         r = fetch_gym_data(access_token)
-    print(r.json())
     response = render(request, "page_template.html", {"gyms": r.json()})
-    response.set_cookie("access-token", access_token, 24 * 60 * 60)
+    response.set_cookie("access-token", access_token, 3 * 24 * 60 * 60)
     return response
 
 
@@ -33,7 +32,7 @@ def fetch_access_token(request):
     r = requests.post(url="https://octo-api.asuc.org/refresh-token",
                       headers={'Content-Type': 'application/json'},
                       json={
-                            "refresh-token": refresh_token
+                          "refresh-token": refresh_token
                         }
                       )
     data = r.json()

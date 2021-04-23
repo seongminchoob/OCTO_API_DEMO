@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-REFRESH_TOKEN = # your refresh token here
+REFRESH_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoicmVmcmVzaCIsInVpZCI6IkQ5QktldHVWRGZOSm5UZWtCN2pqYXp4M3BQdDEifQ.Bb0AgJhDiYAIGnBFFHETbfxF327aX9Xynqmxs5FiXt4"# your refresh token here
 
 LANGUAGE_CODE = 'en-us'
 
