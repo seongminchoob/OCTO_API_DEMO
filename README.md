@@ -8,6 +8,8 @@ use this for the refresh token
 
 "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoicmVmcmVzaCIsInVpZCI6IkQ5QktldHVWRGZOSm5UZWtCN2pqYXp4M3BQdDEifQ.Bb0AgJhDiYAIGnBFFHETbfxF327aX9Xynqmxs5FiXt4"
 
+**!!!For berkeley students, fetch your refresh token by authenticating in https://octo.asuc.org/apidocs.html**
+
 
 ## Setup Instructions
 
